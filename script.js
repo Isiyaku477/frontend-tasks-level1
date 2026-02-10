@@ -1,4 +1,3 @@
-console.log("Frontend tasks loaded");
 const sidebar = document.getElementById("sidebar");
 const toggleBtn = document.getElementById("toggleBtn");
 
