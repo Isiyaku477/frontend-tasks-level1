@@ -1,3 +1,68 @@
 body {
   font-family: Arial, sans-serif;
 }
+/* Basic layout */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 250px;
+  background: #ffbf00;
+  color: #000;
+  height: 100vh;
+  transition: width 0.3s;
+  position: relative;
+  padding: 20px;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+/* Logo */
+.sidebar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Menu */
+.sidebar .menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar .menu li {
+  margin: 15px 0;
+}
+
+.sidebar .menu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .menu li a span {
+  margin-right: 10px;
+}
+
+/* Toggle button */
+#toggleBtn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
